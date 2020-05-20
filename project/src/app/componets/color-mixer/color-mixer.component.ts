@@ -10,13 +10,13 @@ export class ColorMixerComponent implements OnInit {
 
   @Input() hexColor1: string;
   @Input() hexColor2: string;
+
   mixColor: string;
   invertedColor: any;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.hexColor2);
     this.mixColor = this.decode(this.hexColor1, this.hexColor2);
     this.invertColor = this.invertColor(this.mixColor);
     this.mixColor = '#' + this.mixColor;
