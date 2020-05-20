@@ -4,7 +4,7 @@ import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core
   selector: 'app-color-mixer',
   templateUrl: './color-mixer.component.html',
   styleUrls: ['./color-mixer.component.css'],
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ColorMixerComponent implements OnInit {
 
